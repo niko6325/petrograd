@@ -94,14 +94,20 @@
         <div class="container">
 
             <section class="row hovedretbilleder">
-                <!--Suppe-->
+        <!--Suppe-->
+               <template id="produkt_template">
                 <div class="col-sm-4 ">
                     <section class="row">
                         <img src="imgs/medium/bulgarskbondesuppe-md.jpg" alt="billede_1">
                     </section>
                     <section class="row">
                         <div class="col-sm-6 suppe">
-                            <p><i>Bulgarskbondesuppe</i></p>
+                            <h4 class="data_navn"><i>Bulgarskbondesuppe</i></h4>
+                            <h4 class="pris"><span class="data_pris">39 kr.</span></h4> <!-- TODO: Sæt udsolgt class ved udsolgt
+                            sæt rabat class ved rabat-->
+                            <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span></h4> <!-- skal kun vises ved rabat-->
+                            <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
+                            <!-- skal kun vises ved udsolgte produkter-->
                         </div>
                         <div class="col-sm-6">
 
@@ -110,47 +116,14 @@
                                 Se flere detaljer
                             </button>
 
-    <!-- Modal -->
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_suppe">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel_suppe">Bulgarskbondesuppe</h4>
-                                        </div>
-                                        <div class="modal-body">
-
-                                            <p>Navn
-                                            </p>
-                                            <p>Beskrivelse
-                                            </p>
-                                            <p>Pris
-                                            </p>
-                                            <p>Status
-                                            </p>
-                                            <p>Rabat
-                                            </p>
-                                            <p>Vegetaregenthed
-                                            </p>
-
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
 
                         </div>
+
                     </section>
 
                 </div>
+                   </template>
+
     <!--Suppe slut-->
     <!--Rogn-->
                 <div class="col-sm-4 ">
@@ -158,7 +131,12 @@
                         <img src="imgs/medium/mos-rogn-md.jpg" alt="billede_2"></section>
                     <section class="row">
                         <div class="col-sm-6 rogn">
-                            <p><i>Rogn med mos</i></p>
+                            <h4 class="data_navn"><i>Rogn med mos</i></h4>
+                            <h4 class="pris"><span class="data_pris">39 kr.</span></h4> <!-- TODO: Sæt udsolgt class ved udsolgt
+                            sæt rabat class ved rabat-->
+                            <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span></h4> <!-- skal kun vises ved rabat-->
+                            <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
+                            <!-- skal kun vises ved udsolgte produkter-->
                         </div>
                         <div class="col-sm-6">
 
@@ -166,43 +144,6 @@
                             <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
                                 Se flere detaljer
                             </button>
-
-    <!-- Modal -->
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_rogn">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel_rogn">Rogn med mos</h4>
-                                        </div>
-                                        <div class="modal-body">
-
-                                            <p>Navn
-                                            </p>
-                                            <p>Beskrivelse
-                                            </p>
-                                            <p>Pris
-                                            </p>
-                                            <p>Status
-                                            </p>
-                                            <p>Rabat
-                                            </p>
-                                            <p>Vegetaregenthed
-                                            </p>
-
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
 
                         </div>
                     </section>
@@ -213,7 +154,12 @@
                     <section class="row"> <img src="imgs/medium/russisksalat-md.jpg" alt="billede_3"></section>
                     <section class="row">
                         <div class="col-sm-6 salat">
-                            <p><i>Russisk salat</i></p>
+                            <h4 class="data_navn"><i>Russisk salat</i></h4>
+                            <h4 class="pris"><span class="data_pris">39 kr.</span></h4> <!-- TODO: Sæt udsolgt class ved udsolgt
+                            sæt rabat class ved rabat-->
+                            <h4 class="rabatpris">Pris: <span class="data_rabatpris">DATA_RABATPRIS</span></h4> <!-- skal kun vises ved rabat-->
+                            <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
+                            <!-- skal kun vises ved udsolgte produkter-->
                         </div>
                         <div class="col-sm-6">
 
@@ -221,43 +167,6 @@
                             <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
                                 Se flere detaljer
                             </button>
-
-    <!-- Modal -->
-                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_salat">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel_salat">Russisk salat</h4>
-                                        </div>
-                                        <div class="modal-body">
-
-                                            <p>Navn
-                                            </p>
-                                            <p>Beskrivelse
-                                            </p>
-                                            <p>Pris
-                                            </p>
-                                            <p>Status
-                                            </p>
-                                            <p>Rabat
-                                            </p>
-                                            <p>Vegetaregenthed
-                                            </p>
-
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-
 
                         </div>
                     </section>
