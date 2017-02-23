@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Petrograd</title>
+
+    <link rel="stylesheet" href="css/petro.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style>
+        .mySlides {
+            display: none;
+            margin-top: 2vw;
+            margin-left: -1.3vw;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid baggrund">
+        <header>
+            <section class="row logo">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <a href="frederikkeholmen.com/petrograd/petro.html"><img src="imgs/logo-01.svg" alt="logo"></a>
+                </div>
+            </section>
+        </header>
+
+        <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="imgs/large/boef.jpg" alt="img" style="width:100vw">
+            <img class="mySlides" src="imgs/large/borsjtj.jpg" alt="img" style="width:100vw">
+            <img class="mySlides" src="imgs/large/bochkarev.jpg" alt="img" style="width:100vw">
+        </div>
+        <div class="container-fluid">
+            <section class="row">
+                <div class="col-xs-12">
+                    <script>
+                        var myIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) {
+                                myIndex = 1
+                            }
+                            x[myIndex - 1].style.display = "block";
+                            setTimeout(carousel, 5000); // Change image every 3 seconds
+                        }
+
+                    </script>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="container-fluid">
+
+            <section class="row knap">
+                <div class=" col-xs-12 col-sm-2 col-sm-push-1">
+                    <a href="frederikkeholmen.com/petrograd/petro.html"><img src="hovedretter-01.svg"></a>
+                </div>
+                <div class=" col-xs-12 col-sm-2 col-sm-push-1">
+                    <a href="frederikkeholmen.com/petrograd/petro.html"><img src="forretter-01.svg"></a>
+                </div>
+                <div class=" col-xs-12 col-sm-2 col-sm-push-1">
+                    <a href="frederikkeholmen.com/petrograd/petro.html"><img src="desserter-01.svg"></a>
+                </div>
+                <div class=" col-xs-12 col-sm-2 col-sm-push-1">
+                    <a href="frederikkeholmen.com/petrograd/petro.html"><img src="sideorders-01.svg"></a>
+                </div>
+                <div class=" col-xs-12 col-sm-2 col-sm-push-1">
+                    <a href="frederikkeholmen.com/petrograd/petro.html"><img src="drikkevarer-01.svg"></a>
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <div class="container">
+            <section class="row hovedretbilleder">
+                <div class="col-sm-4 ">
+                    <img src="imgs/medium/bulgarskbondesuppe-md.jpg">
+                </div>
+                <div class="col-sm-4 ">
+                    <img src="imgs/medium/mos-rogn-md.jpg">
+                </div>
+                <div class="col-sm-4 ">
+                    <img src="imgs/medium/russisksalat-md.jpg">
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-sm-4">
+                    <section class="row">
+                        <div class="col-sm-6 suppe">
+                            <p><i>Bulgarskbondesuppe</i></p>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
+                                Se flere detaljer
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Bulgarskbondesuppe</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <p>Navn
+                                            </p>
+                                            <p>Beskrivelse
+                                            </p>
+                                            <p>Pris
+                                            </p>
+                                            <p>Status
+                                            </p>
+                                            <p>Rabat
+                                            </p>
+                                            <p>Vegetaregenthed
+                                            </p>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </section>
+                </div>
+                <div class="col-sm-4">
+                    <section class="row">
+                        <div class="col-sm-6 rogn">
+                            <p><i>Rogn med mos</i></p>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
+                                Se flere detaljer
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Rogn med mos</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <p>Navn
+                                            </p>
+                                            <p>Beskrivelse
+                                            </p>
+                                            <p>Pris
+                                            </p>
+                                            <p>Status
+                                            </p>
+                                            <p>Rabat
+                                            </p>
+                                            <p>Vegetaregenthed
+                                            </p>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </section>
+                </div>
+                <div class="col-sm-4">
+                    <section class="row">
+                        <div class="col-sm-6 salat">
+                            <p><i>Russisk salat</i></p>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary btn-sm modalknap" data-toggle="modal" data-target="#myModal">
+                                Se flere detaljer
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Russisk salat</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <p>Navn
+                                            </p>
+                                            <p>Beskrivelse
+                                            </p>
+                                            <p>Pris
+                                            </p>
+                                            <p>Status
+                                            </p>
+                                            <p>Rabat
+                                            </p>
+                                            <p>Vegetaregenthed
+                                            </p>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </section>
+                </div>
+
+
+
+            </section>
+
+
+
+        </div>
+
+
+        <script src="js/jquery.js "></script>
+
+        <script src="js/petro.js "></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </div>
+</body>
+
+</html>

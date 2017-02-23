@@ -1,0 +1,42 @@
+   .baggrund {
+       background-image: url(../imgs/baggrund2-01.png);
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 100%;
+       height: 100%;
+       margin: 0;
+       padding: 0;
+   }
+   img {
+       width: 100%;
+   }
+   .logo {
+       margin-top: 4vw;
+       margin-left: 11svw;
+   }
+   .knap {
+       margin-top: 4vw;
+       margin: 0;
+       margin-top: 1vw;
+       width: 100%;
+   }
+   .hovedretbilleder {
+       margin-top: 4vw;
+       width: 100%;
+   }
+   button.modalknap {
+       background: #F64340;
+       border-color: #F64340;
+   }
+   .salat p {
+       font-size: 20px;
+       font-family: "Athelas"
+   }
+   .rogn p {
+       font-size: 20px;
+       font-family: "Athelas"
+   }
+   .suppe p {
+       font-size: 20px;
+       font-family: "Athelas"
+   }
