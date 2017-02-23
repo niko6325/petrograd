@@ -22,10 +22,21 @@ function visProdukt(produkt) {
     klon.querySelector(".data_navn").innerHTML = produkt.navn;
     klon.querySelector(".data_pris").innerHTML = produkt.pris;
 
-    var rabatpris = Math.ceil( produkt.pris - (produkt.pris+produkt.rabatsats/100));
+    var rabatpris = Math.ceil( produkt.pris * (1-(produkt.rabatsats/100)));
     klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
+    console.log(rabatpris)
 
     klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
+
+   if(produkt.udsolgt == false) {
+        //produktet er ikke udsolgt
+        //udsolgttekst skal fjernes
+    var udsolgttekst = klon.querySelector(".udsolgttekst");
+    udsolgttekst.parentNode.removeChild( udsolgttekst );
+    } else {
+        klon.querySelector(".pris").classList.add("udsolgt");
+
+    }
 
     // append klon til .produkt_liste
     document.querySelector(".produktliste").appendChild(klon);
