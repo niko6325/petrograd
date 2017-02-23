@@ -42,8 +42,17 @@
    }
 .udsolgt {
     text-decoration: line-through;
+    color: red;
 }
 
 .rabat {
     text-decoration: line-through;
+}
+
+.rabatpris {
+    color: green;
+}
+
+.pris {
+    color: #a80909;
 }
