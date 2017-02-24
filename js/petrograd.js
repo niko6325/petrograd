@@ -28,6 +28,10 @@ function visProdukt(produkt) {
 
     klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
 
+    klon.querySelector('button').dataset.id = produkt.id;
+    klon.querySelector('button').addEventListener('click', knapKlikketPå)
+
+
    if(produkt.udsolgt == false) {
         //produktet er ikke udsolgt
         //udsolgttekst skal fjernes
@@ -45,6 +49,52 @@ function visProdukt(produkt) {
         klon.querySelector(".pris").classList.add("rabat");
     }
 
-    // append klon til .produkt_liste
-    document.querySelector(".produktliste").appendChild(klon);
+        // append klon til .produkt_liste
+
+    document.querySelector("." + produkt.kategori).appendChild(klon);
+    //Linjen ovenfor er ens med de 10 linjer nedenfor:
+    /*if(produkt.kategori=='forretter'){
+        document.querySelector(".forretter").appendChild(klon);
+    } else if(produkt.kategori=='hovedretter'){
+        document.querySelector(".hovedretter").appendChild(klon);
+    } else if(produkt.kategori=='desserter'){
+        document.querySelector(".desserter").appendChild(klon);
+    } else if(produkt.kategori=='sideorders'){
+        document.querySelector(".sideorders").appendChild(klon);
+    } else if(produkt.kategori=='drikkevarer'){
+        document.querySelector(".drikkevarer").appendChild(klon);
+    } */
+
 }
+
+//(e) = oplysninger om eventet
+function knapKlikketPå(oplysningerOmEventet){
+
+    var produktId = oplysningerOmEventet.target.dataset.id;
+
+    //send forespørgsel til http://petlatkea.dk/2017/dui/api/product?callback=?&id=21
+    //med det rigtige id
+   $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?&id="+produktId, visModalIndhold);
+}
+
+function visModalIndhold(mereInfo){
+    console.log(mereInfo);
+
+    document.querySelector('#myModalLabel').textContent=mereInfo.navn;
+    document.querySelector('#myModal .modal-body p').textContent=mereInfo.langbeskrivelse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
