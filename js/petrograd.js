@@ -26,7 +26,7 @@ function visProdukt(produkt) {
     klon.querySelector(".data_rabatpris").innerHTML = rabatpris;
     console.log(rabatpris)
 
-    klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
+    klon.querySelector(".data_billede").src = "imgs/small/" + produkt.billede + "-sm.jpg";
 
     klon.querySelector('button').dataset.id = produkt.id;
     klon.querySelector('button').addEventListener('click', knapKlikketPå)
